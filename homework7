@@ -1,0 +1,285 @@
+# week3-homework-7-omer-parlak
+
+#### 1. adım ==> git unstaging staging kavramları nedir 
+
+Yapılan değişikliklerin commit'e hazırlanmasına staging denir. git add komutu ile yapılır. Unstage ise git add yapılmamış durumdur.
+
+#### 2. adım ==> Git config ayarlarını bakalım user.name ve user.email
+
+````sh
+git config –global user.name "omer-parlak"
+git config --global user.email "omerparlak92@gmail.com"
+````
+
+#### 3. adım ==> git_code adında linux  komutlarıyla dizin oluşturalım
+
+````sh
+mkdir git_code
+````
+
+#### 4. adım ==> git_code dizine içinde data.txt dosyası oluşturalım 
+
+````sh
+cd git_code
+touch data.txt
+````
+
+#### 5. adım ==> git init yapalım
+
+````sh
+git init
+````
+
+#### 6. adım ==> linux ve git adında 2 tane branch oluşturalım
+
+````sh
+git branch linux
+git branch git
+````
+
+#### 7. adım ==> linux branchine linux.txt dosyasının içine aklıma gelen linux komutları yazar her 2-3 satır sonunda add ve commit yapalım
+
+````sh
+git checkout linux
+cat >> linux.txt
+whoami
+reboot 
+netstat -tulpn
+^C
+
+git status
+git add .
+git status
+git commit -m "1. commit"
+git log
+
+vim linux.txt
+mkdir
+cd
+ls -la
+:wq
+
+git status
+git add .
+git status
+git commit -m "2. commit"
+git log
+
+vim linux.txt
+clear
+cat >> denemet.txt
+pwd
+:wq
+
+git status
+git add .
+git status
+git commit -m "3. commit"
+git log
+
+vim linux.txt
+touch
+sudo apt-get update
+sudo apt-get clear
+sudo apt-get autoremove -y
+:wq
+
+git status
+git add .
+git status
+git commit -m "3. commit"
+git log
+````
+
+
+#### 8. adım ==> git branchine git.txt dosyasının içine aklıma gelen git komutları yazar her 2-3 satır sonunda add ve commit yapalım
+
+````sh
+git checkout git
+cat >> git.txt
+git config --global user.name "omer-parlak"
+git config --global user.email "omerparlak92@gmail.com"
+git config --global core.editor "notepad++"
+git config --global -l
+git config -- global alias.harita "log -all --graph --decorate -- oneline"
+git harita
+^C
+
+git status
+git add .
+git status
+git commit -m "1. commit"
+git log
+
+vim git.txt
+git init
+git add .
+git commit - m "commit adı"
+git commit --amend -m "commit adını değiştir"
+git commit -a -m "add yapmadan gönder"
+git log
+git status
+git --help
+:wq
+
+git status
+git add .
+git status
+git commit -m "2. commit"
+git log
+
+vim git.txt
+git stash
+git stash list
+git stash pop 
+git stash apply stash@{0}
+git stash drop stash@{0}
+git stash save "special data"
+:wq
+
+git status
+git add .
+git status
+git commit -m "3. commit"
+git log
+
+vim git.txt
+git branch 
+git branch backend
+git checkout backend
+git branch -v
+git branch -d backend
+git checkout -b frontend
+git diff master backend
+:wq
+
+git status
+git add .
+git status
+git commit -m "4. commit"
+git log
+
+vim git.txt
+git checkout master
+git merge frontend
+git remote add origin https://github.com/omer-parlak/patika_airties_devops.git
+git push -u origin master
+git pull
+git clone https://github.com/omer-parlak/devops_bootcamp.git
+:wq
+
+git status
+git add .
+git status
+git commit -m "5. commit"
+git log
+
+vim git.txt
+git tag
+git tag v1.1
+git show v1.1
+ssh-keygen -t rsa -b 4096 -C "omerparlak92@gmail.com"
+eval `ssh-agent -s`
+ssh-add
+ssh -T git@github.com
+:wq
+
+git status
+git add .
+git status
+git commit -m "6. commit"
+git log
+````
+
+#### 9. adım ==> GitHub için SSH-key oluşturarak GitHub push yapalım
+
+````sh
+ssh-keygen -t rsa -b 4096 -C "omerparlak92@gmail.com"
+eval `ssh-agent -s`
+ssh-add
+ssh -T git@github.com
+````
+.pub uzantılı dosyadaki kodu github içindeki key kısmına kopyalıyoruz.
+
+````sh
+git push -u origin master
+````
+
+
+#### 10. adım ==> git log --oneline --decorate  alias olarak bir isim verelim
+
+````sh
+git config -- global alias.map "log --oneline --decorate "
+git map
+````
+
+#### 11. adım ==> .gitignore dosyası oluşturalım.  ve git tarafından takip edilmesini istemediğimiz secret adındaki dizini git ignore verelim
+
+````sh
+mkdir secret
+cat >> .gitignore
+secret
+^C
+git status
+git add .
+git status
+git commit -m "gitignore"
+````
+#### 12. adım ==> Bizim belirlediğimiz iki commit arasındakıi farka bakalım? 
+
+````sh
+git diff commitID1 commitID2
+````
+
+#### 13. adım ==> GitHub bir proje clone yapalım
+
+````sh
+git clone https://github.com/omer-parlak/git_code.git
+````
+
+#### 14. adım ==> git log,git statusu sürekli kullanalım
+
+````sh
+git log
+git status
+````
+
+#### 15. adım ==> Tag versiyonalamada kullanalım
+
+````sh
+git tag
+git tag v1.1
+git show v1.1
+git tag v1.2
+git show v1.2
+````
+#### 16. adım ==> GitHub branch açıp , pull request yapıp kendi localimizde pull yapalım
+
+````sh
+git pull
+````
+#### 17. adım ==> en son durumda linux fast forward merge ile git branchini no-ff merge ile yapalım
+
+````sh
+git merge linux
+git merge git --no-ff
+````
+
+#### 18. adım ==> branchlerimizi listelemek ,silmek v.b branch işlemleri yapalım
+
+````sh
+git branch --list
+git branch -d linux
+git branch -d git
+git branch
+````
+
+#### 19. adım ==> conflict nedir? çözümü
+
+İki kişi aynı dosyayı ve aynı satırı değiştirirse ve git otomatik olarak merge edemezse bu durumda conflict yani çakışma olacaktır. Bu durumda git status ile çakışma olan dosya bulunur. Bu dosya incelenir ve duruma göre manual olarak merge yapılır. Çakışma yaşanan kişi ile de irtibat kurularak çakışma çözülebilir.
+
+#### 20. adım ==> merge ile rebase arasındaki fark nedir?
+
+Master a bir branch i rebase ettiğinizde , branch deki commitlerinizi tek tek alıp master ın sonuna ekleyecektir. Sonuç olarak rebase sonucunda tek bir history oluşturur çünkü tamamlanan işi bir branch ten diğerine aktarır. Bu süreçte istenmeyen history ortadan kalkar.
+
+Merge yaptığmızda is yeni bir “ Merge commit” yaratıp iki branchinde tüm history(yapılmış tüm değişiklikleri) sini içerecektir. Master , branch te yapılan tüm değişiklikleri alacak ve entegre edecektir ancak branch in history sinde hiçbir değişiklik olmayacaktır.
