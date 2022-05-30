@@ -1,0 +1,249 @@
+# week3-homework1-6-omer-parlak
+
+## week-3-homework-1
+
+#### 1- Bilgisayarda kaç port vardır?
+
+65536 tane port vardır.
+
+#### 2- 1024 altı olan portlar neden dış dünyaya açılmıyor? 1024 altı portlarin genel adı nedir? (well-known ports)
+
+Bu portlar bazı uygulamalar için özel olarak ayrılmıştır. Bunlar standartlaştırılmış portlar olarak geçer. İyi bilinen portlar yani well-known ports olarak bilinir.
+
+#### 3- 80 portu dışarıya 8585 açılmış neden?
+
+Alternatif olarak bazı bilgisayar ve HTTP sunucuları Port 80 yerine, 8080 gibi 8585 gibi bir portu kullanmayı tercih edebilirler. Bunun nedeni, bu port üzerinden kolayca önbellekleme yapabilmesi veya bir proxy sunucusunun kullanılmasıdır.
+
+#### 4- Nginx nedir?
+
+Nginx; yüksek eş zamanlı çalışma kabiliyeti, yüksek performans ve düşük hafıza kullanımına odaklanılarak tasarlanmış bir Web sunucusudur.         
+
+Özellikleri;
+Reverse Proxy (Ters Vekil Sunucusu),
+
+Load Balancing (Yük Dengeleme),
+
+Virtual Host (Sanal Sunucu),
+
+Statik ve index dosyalarının sunumu, otomatik indeksleme.
+
+#### 5- Devops nedir? Devops yapısını araştırınız. (sonsuzluk işaretli diagramdaki başlıkların araştırılması)
+
+Developers and Operations.  DevOps , Bilgi Teknolojileri departmanı içerisinde bulunan iki temel birimi (Developers and Operations) Geliştiriciler(Yazılım Geliştiriciler, Yazılım Testçileri, vb.), Operasyon (Sistem Mimari ve Altyapı Ekipleri,Güvenlik ve Ağ ekipleri vb.) bir arada etkili bir iletişim içerisinde beraber çalışmalarıdır.DevOps’u aslında bir felsefe, yaklaşım veya bakış açısı olarak değerlendirebiliriz.
+
+Dev takımı,
+
+Oluşturulacak uygulamaya ait planları yapmak,
+
+Uygulamayı oluşturmak(Kodlamak)
+
+Uygulama release ve publish (versiyonlama ve yayınlama)
+
+Uygulama iyileştirme (Update)
+
+Uygulama Test süreçlerinden sorumludur.
+
+Ops takımı,
+
+Oluşan uygulamaların barındırılacağı ve kullanılacağı ortamı tasarlamak,
+
+Uygulamaların çalışması için gereken sistem bileşenleri ile iletişime geçebilmeleri için gerekli ağ ve güvenlik yapılandırmalarının yapılmasını sağlamak,
+
+Uygulamanın kaynak kullanımını belirlemek,
+
+Uygulamanın gerekli izleme (Monitoring) araçları ile takibini sağlamak,
+
+Uygulamanın sistem kaynaklarını kullanım düzeyine göre kaynak arttırımını sağlamaktan (Scale Up ve Scale Down) sorumludur.                                                                                                                                 
+CI&CD (Sürekli entegrasyon ve Sürekli Dağıtım) mantığı DevOps kavramı ile beraber oluşmaktadır.Ortaya çıkarılan ürünlerin bir otomasyon çevresinde ilerlemesi Dağıtım (Deploy), Versiyonlama (Release) ve Test süreçleri olarak DevOps içerisindeki tüm personelin uygulamanın kodlanmasından çalıştırılmasına ve yaşam döngüsünden haberi olmasını sağlıyor.
+
+## week-3-homework-2
+
+#### 1- Statik kod analizi: Sonarqube
+
+Statik Analiz: Yazılımcıların kodlarını derlenmemiş (uncompiled) ve yürütmeden (execute etmeden) öncesinde test etme yöntemine statik kod analizi diyoruz. Buna kodun “çalışma öncesi ortamı” diyebiliriz. Statik kod analiz araçları, programlama hatalarını ve zafiyetlerini göstermek ve bunların yazılımcılarca bulunması için olağanüstü verimli çözümler sunuyor. Bu şekilde, hatalar ve zafiyetler, kod derlendikten sonra bir sunucuda “canlı” olarak çalışmaya başlaması öncesinde hiçbir zarar vermeden önceden rahatlıkla tespit ediliyor. 
+
+SonarQube, yaptığınız projedeki kodların güvenlik, tekrar geliştirilebilirlik gibi unsurlar ile projenizi denetleyen bir yazılım aracıdır. Kodunuzda bug olup olmadığına, güvenlik açığı olup olmadığına bakar. Projenizi localinizde kurar ve çalıştırır. Güvenlik ve tekrar geliştirilebilirlik açısından not vererek projenizin testi geçip geçmediğini söyler. Verdiği uyarılar ile projenizi daha güvenli ve hatasız bir hale getirebilirsiniz. SonarQube, kodunuzun hangi satırlarında ne gibi hatalarınızın olduğunu söylerken, bunları nasıl çözebileceğiniz konusunda da sizlere ipuçları verir.
+
+#### 2- Kubernetes yapısı
+
+Yunanca “dümenci” ya da “kaptan” anlamına gelen Kubernetes, konteyner orkestrasyonunu gerçekleştiren açık kaynaklı bir yazılımdır. Kubernetes Docker gibi kapsayıcılı uygulamaları yönetebilir, ölçeklendirebilir ve dağıtabilir.
+
+#### 3- Orchestration yapısı
+
+Sistem yönetiminde Orkestrasyon, bilgisayar sistemleri ve yazılımlarının otomasyon yapılandırması, koordinasyonu ve yönetimidir.
+
+#### 4- npm nedir ve niçin kullanılır?
+
+npm node package manager, tarayıcılar ve sunucular gibi online platformlarla etkileşime geçmeye yardımcı olan bir komut satırı aracıdır. Bu araç bir proje gerçekleştirmek için gereken paket yüklemek ve kaldırmakta, sürüm ve bağımlılık yönetiminde yardımcı olur.
+
+#### 5- Agile-Scrum nedir?
+
+Agile; Atik yazılım geliştirme ya da çevik yazılım geliştirme, basit prensiplere dayanan yazılım geliştirme metotları gruplarının genel adıdır.
+
+Scrum; Agile proje yönetim metotlarında biri olarak karşımıza çıkmaktadır. Kompleks yazılım süreçlerinin yönetilmesi amacıyla kullanılmaktadır. Bu yapılırken bütünü parçalayan; tekrara dayalı nitelikte bir yöntem izler. Düzenli olarak geri bildirim ve planlamalar ile hedefe ulaşma olanağı sağlar.
+
+## week-3-homework-3
+
+#### 1- Ansible nedir?
+Bir bilgisayardan bir çok server a müdahele edebildiğimiz otomasyon aracıdır.
+Ansible yönetiminizde olan sunucuların tek bir çatı altında istediğiniz herşeyi yapmaya olanak sağlayan, client istemcilere herhangi bir agent kurma ihtiyacı gerektirmeyen, Python ve Ruby dilleri ile geliştirilmiş özgür bir platformdur.
+
+#### 2- XML nedir? Açılımı nedir?
+
+XML, internetten aracılığı ile veri alışverişi yapan platformlar ve sistemler arasındaki veri iletişimini standart hale getirmek için tasarlanan bir işaretleme dilidir. XML'nin İngilizce karşılığı ''Extensible Markum Language'' olan ve Türkçeye ''Genişletilebilir İşaretleme Dili'' şeklinde girmiştir.
+
+#### 3- JSON nedir?
+
+Json - JavaScript Object Notation sistemi veri depolamak için kullanılan ve çoğunlukla bir sunucu ile istemci arasında olan formata verilen isimdir. JSON dosyaları, XML dosyalarının çok daha basit ve hafif alternatifleri olarak bilinir. Bu format depolanmış olan verinin eş zamansız bir şekilde yüklenmesi adına uyumlu olarak çalışmaktadır.
+
+#### 4- YAML nedir?
+
+yet another markup language veya ain't markup language
+
+Tüm programlama dilleri için insan tarafından okunabilir bir veri serileştirme standartıdır. Genellikle yapılandırma dosyaları için ve veri depolamak veya aktarmak için kullanılır. genelde konfigürasyon dosyalarında kullanılıyor. 
+
+#### 5- http, https, status kodların araştırılması (1 ile başlayanlar, 2 ile başlayanlar...)
+
+Https'nin açılımı, 'Hyper Text Transfer Protocol Secure' yani 'Güvenli Hiper Metin Transferi Protokolü'dür. Sebebi ise şudur: Http ile belli bir oranda güvenli veri aktarımı sağlanmaktadır. Https ise bu güvenliğin arttırılmış biçimidir.
+
+Http Durum Kodları;
+
+1xx: Bilgi (Informational)
+
+2xx: Başarı (Success)
+
+3xx: Yönlendirme (Redirection)
+
+4xx: Tarayıcı Hatası (Client Error)
+
+5xx: Sunucu Hatası (Server Error)
+
+## week-3-homework-4
+
+#### 1- URL, URI
+
+URI -  Uniform Resource Identifier  : URI, internette bir kaynak üzerine işaret edilmiş resim veya belge gibi klasik formata uygun bir karakter dizisidir. 
+
+URL - Uniform Resource Locator  : URL, bir kaynağın örnek konumlayıcı veya tek halde kaynak bulucu olarak tanımlanabilir.
+
+#### 2- DNS yapısı, Domain nedir? Host yapısı
+
+DNS Yapısı en üstten başlayarak aşağıya doğru inen, hiyerarşik yapıya sahip bir veritabanıdır. DNS sisteminde, root nokta (.) ile gösterilir.
+
+Veritabanı üzerindeki her bir alt nokta “domain”; bu domainden kollara ayrılan her bir parça ise “subdomain” olarak adlandırılır. 
+
+Kısaca DNS, alan adlarını IP adreslerine çevirir ve böylece internet tarayıcınıza karmaşık IP adresleri girmeden dilediğiniz internet sitesine giriş yapabilirsiniz. Mesela, dünyanın en çok ziyaret edilen internet sitelerinden biri olan Google'a girmek için 74.125.224.83 IP adresini girmeniz gerekir.
+
+İnternet siteleri de tıpkı gerçek hayattaki siteler gibi bir arazi üzerine kurulurlar. Bir internet sitesini yayınlamak için gerekli olan sanal araziye “hosting” adı verilir. İngilizce bir terim olan hosting, dilimize “web barındırma alanı” ya da “barındırma alanı” olarak çevrilebilir.
+
+#### 3- GNU nedir?
+
+GNU, özgür yazılım olan bir işletim sistemidir, yani kullanıcıların özgürlüğüne saygı duyar. GNU işletim sistemi; GNU paketlerinden (özellikle GNU Projesi tarafından yayımlanan programlar) ve üçüncü taraflarca yayımlanan özgür yazılımdan oluşur. GNU'nun geliştirilmesi, özgürlüğünüzü ihlal eden yazılımlar olmadan bir bilgisayarın kullanılmasını mümkün kılmıştır.
+
+#### 4- Git
+
+Global Information Tracker (Küresel bilgi takip sistemi)
+Git, büyüklüğü veya küçüklüğü fark etmeksizin, projelerimizi geliştirirken bize hız katacak ve verimliliği en üst düzeye çıkarmamızda yardımcı olacak, açık kaynaklı bir sürüm kontrol sistemidir.
+
+Github ise sürüm kontrol sistemi olarak Git kullanan projeler için web tabanlı bir depolama servisidir.
+
+#### 5- CLİ, GUİ ve farkı
+
+CLI -Command Line Interface 
+
+Türkçe karşılığıyla komut satırı arayüzüdür. Kullanıcıların, bilgisayarlara belirli görevleri yapmaları için metin komutlar girmelerini sağlayan bir programdır.
+
+ GUI - Graphical User Interface 
+ 
+Bir GUI, bilgisayarla etkileşim kurmak için kontroller veya widget'lardan oluşur. Diğer yandan, CLI'yi kullanırken, kullanıcının görevleri gerçekleştirmek için komutları girmesi gerekir. Genel olarak, GUI daha kullanıcı dostudur, ancak CLI'de yürütme hızı daha yüksektir.
+
+## week-3-homework-5
+
+### 1- Kernel ile Shell farkı
+
+Çekirdek ve kabuk arasındaki temel fark, çekirdek, sistemin tüm görevlerini kontrol eden işletim sisteminin çekirdeği iken kabuk, kullanıcıların çekirdekle iletişim kurmasına izin veren arabirimdir.
+
+#### 2- Docker portainer
+
+Portainer, Docker'la komut isteminden yaptığınız bir çok işlemi görsel bir yönetim panelinden yapmanızı sağlayan bir araç.
+
+#### 3- Cross origin
+
+Cross-Origin Resource Sharing (CORS), bir web sayfası üzerindeki bazı kaynakların (örneğin font dosyaları), kaynağın sunulduğu alan adının dışındaki bir alan adından istenebilmesine izin veren bir mekanizmadır. Bir web sayfası, özgürce kökler arası resimleri, stil sayfalarını, betikleri ve videoları ekleyebilmektedir.
+
+#### 4- Application server: Tomcat, Wildfly, Nginx
+
+Application server genel olarak  bir uygulama programıdır. Gelen requestleri karşılamak için connection açar ve ardından response döner. Application server remote makinada çalışabileceği gibi client program ile aynı makinada da çalışabilir.
+
+Wildfly Java uygulamalarını ve hizmetlerini oluşturmak, dağıtmak ve barındırmak için kullanılan açık kaynaklı bir Java EE tabanlı uygulama sunucusudur. 
+
+Tomcat, Apache Software Foundation'dan bir Java sunucu uygulaması kapsayıcısı ve web sunucusudur.
+
+#### 5- CVCS - DVCS
+
+Geliştirici veya bir tasarım ekibinde, bir proje üzerinde ortak çalışma sürecindeki dosyaların kontrolleri için daha geniş ölçekli bir çözüm olarak Merkezi Sürüm Kontrol Sistemleri (Centralized Version Control Systems / CVCS) geliştirilmiştir. Merkezi sistemler uzun yıllar sürüm kontrol sisteminde standart yöntem olarak kabul görmüştür.
+
+Dağıtık Sürüm Kontrol Sistemleri (Distributed Version Control Systems / DVCS)’nde istemciler (kullanıcılar) dosyaların yalnızca en son bellek kopyalarını almakla kalmaz, yazılım havuzunu (repository) bütünüyle kopyalarlar. Git, Mercurial, Bazaar ve Darcs gibi örnekleri dağıtık sistemlere örnek olarak ele alabiliriz. Dağıtık sistemlerde üzerinde ortak çalışma yütürülen sunuculardan biri çökerse istemcilerden birinin yazılım havuzu sunucuya geri yüklenerek sistem kurtarılabilmektedir. Her seçip alma (check out) işlemi esasında bütün verinin yedeklenmesiyle sonuçlanır.
+
+Dağıtık sistemlerden çoğu birden çok uzak uçbirimdeki yazılım havuzuyla rahatlıkla ilişkilendirilebilir. Bu sayede, aynı projede farklı geliştiriciler farklı iş akışları üzerinden rahatlıkla çalışabilirler.
+
+
+## week-3-homework-6
+
+#### 1- İyi bir commit mesajı nasıl olmalıdır?
+
+Açık ve net bir şekilde olmalıdır.
+
+Hatasız olduğuna emin olunmalıdır.
+
+Atomik bir çalışma şekliyle çalışılmalıdır.
+
+Ne çok büyük ne çok küçük parçalarda olmamalıdır.
+
+#### 2- FIFO ile LIFO sıralama şeklini araştırınız.
+
+FIFO - First in First out (İlk Giren İlk Çıkar)
+
+Yapılan ilk işlemin en üstte göründüğü sıralama şeklidir.
+
+LIFO -  Last in First out (Son Giren İlk Çıkar)
+
+Yapılan son işlemin en üstte göründüğü sıralama şeklidir.
+
+
+#### 3- git merge rebase farkı, rebase yapısı nedir?
+
+Master a bir branch i rebase ettiğinizde , branch deki commitlerinizi tek tek alıp master ın sonuna ekleyecektir. Sonuç olarak rebase sonucunda tek bir history oluşturur çünkü tamamlanan işi bir branch ten diğerine aktarır. Bu süreçte istenmeyen history ortadan kalkar.
+
+Merge yaptığmızda ise yeni bir “ Merge commit” yaratıp iki branchinde tüm history(yapılmış tüm değişiklikleri) sini içerecektir. Master , branch te yapılan tüm değişiklikleri alacak ve entegre edecektir ancak branch in history sinde hiçbir değişiklik olmayacaktır.
+
+Eğer tüm değişiklikleri görmek istiyorsanız merge yapmalısınız çünkü merge tüm değişiklikleri olduğu gibi korur.
+
+Eğer daha sade, anlaşılabilir ve lineer bir commit history istiyor iseniz rebase sizin için daha yaralı olacaktır. Ancak bir ekip olarak public repository üzerinde çalışıyor iseniz çok ama çok dikkatli olmalısınız. Rebase i merge e kıyasla revert etmenin çok ama çok daha zor olacağımı da göz önünde bulundurmanız gerekir.
+
+Son olarak eğer branchinizi push yaptıysanız merge, yapmadıysanız rebase i kullanmanız doğru olacaktır.
+
+#### 4- Sourcetree'yi inceleyiniz.
+
+SourceTree, Atlassian'ın çıkarmış olduğu, Git projelerinin yönetimini kolaylaştıran oldukça kullanışlı bir masaüstü uygulamasıdır. Bitbucket başta olmak üzere, Github ve Stash gibi diğer sistemlerdeki Git repository'lerinizi yönetmenizi oldukça kolaylaştıran bir uygulamadır.
+
+#### 5- Interpreter-Complier nedir? Aralarındaki farklar nelerdir?
+
+Üst seviye dillerde yazılanların alt seviye dillerin anlayacağı şekle çevrilmesine complier denir.
+
+Yorumlayıcı (interpreter), yüksek seviyeli programlama dili ile yazılmış bir programı adım adım makine diline çeviren ve makine dilindeki talimatları çalıştıran programdır.
+
+Derleyici'den (compiler) farklı olarak kaynak kod her ne zaman çalışırsa her adımı için makine dilindeki karşılığı tekar oluşturulur ve çalıştırılır.
+
+Kaynak kod yorumlayıcı tarafından direkt çalıştırılabildiği için daha önceden makine diline derlenmesine gerek yoktur. Öte yandan yorumlayıcı her çalıştığında kaynak kod tekrar makine koduna çevrilir. Bu nedenle derlenmiş kodun yorumlayıcıya nispetle daha verimli (hızlı) çalışması beklenir.
+
+#### 6- Sp engine
+
+java server pages . jspler temel olarak servletlerdir, script seklinde html in icine yazilip sonra jsp engine tarafindan servlet e otomatik olarak, ilk cagirilislarinda compile edilirler, işler daha sonra servlet engine tarafından yürütülür. genellikle jsp engine ile servlet engine aynı processdir. Java kodu işaretleri arasında html koduna yerleştirilir. Html sayfasının sonunda .jsp eki bulunur. Bu eke sahip dosyalar webserver tarafından java derleyicisine gönderilir. Jsp dosyası önce java derleyicisi tarafindan bir servlete çevrilir. derlenen .class kod java derleyici tarafından çalıştırılır.
+
+#### 7- Servlet
+
+Java EE içerisinde yer alan Servlet sunucu (server) – istemci (client) tabanlı uygulamaların haberleşmesini yönetmek için kullanılan sınıf, arayüz ve paket topluluğudur. Servlet sunucuya bir istek geldiğinde sırayla çalışacak metotları belirtir. Bu metotlar Servlet yaşam döngüsü olarakta adlandırılır.
+
+
+
